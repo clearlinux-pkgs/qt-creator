@@ -1,0 +1,24 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Jarek Kobus <jaroslaw.kobus@qt.io>
+Date: Thu, 29 Apr 2021 11:35:03 +0200
+Subject: [PATCH] Fix build with GCC 11: include <limits>
+
+Task-number: QTBUG-90395
+Change-Id: Ic6d3fde59bd44d364ca1c1fe48b094bb9768b43c
+Reviewed-by: Eike Ziller <eike.ziller@qt.io>
+---
+ src/plugins/qmlprofiler/qmlevent.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/plugins/qmlprofiler/qmlevent.h b/src/plugins/qmlprofiler/qmlevent.h
+index 344ef1a7..59fa8f50 100644
+--- a/src/plugins/qmlprofiler/qmlevent.h
++++ b/src/plugins/qmlprofiler/qmlevent.h
+@@ -34,6 +34,7 @@
+ #include <QMetaType>
+ 
+ #include <initializer_list>
++#include <limits>
+ #include <type_traits>
+ 
+ namespace QmlProfiler {
