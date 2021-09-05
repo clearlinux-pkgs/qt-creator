@@ -1,4 +1,5 @@
 ld-linux-x86-64.so.2
+libLLVM.so.11
 libQt5Concurrent.so.5
 libQt5Core.so.5
 libQt5Designer.so.5
@@ -21,6 +22,4 @@ libclang-cpp.so.11.1
 libclang.so.11.1
 libgcc_s.so.1
 libm.so.6
-libpthread.so.0
-librt.so.1
 libstdc++.so.6
